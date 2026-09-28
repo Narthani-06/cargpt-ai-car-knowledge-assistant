@@ -1,0 +1,541 @@
+{
+  "metadata": {
+    "title": "CarGPT Custom Knowledge Base (DEMO KNOWLEDGE BASE)",
+    "version": "1.0",
+    "description": "Sample demonstration knowledge base containing specifications, features, and usages of popular cars for RAG retrieval."
+  },
+  "cars": [
+    {
+      "id": "hyundai-creta",
+      "name": "Hyundai Creta",
+      "brand": "Hyundai",
+      "model": "Creta",
+      "body_type": "Compact SUV",
+      "fuel_type": ["Petrol", "Diesel"],
+      "transmission": ["Manual", "Automatic", "CVT", "DCT"],
+      "engine": "1.5L MPi Petrol / 1.5L CRDi Diesel / 1.5L Turbo Petrol",
+      "mileage": "17.4 - 21.8 kmpl",
+      "seating_capacity": 5,
+      "price_range_demo": "₹ 11.0 Lakh - ₹ 20.15 Lakh (Demo Data)",
+      "key_features": [
+        "Panoramic Sunroof",
+        "10.25-inch Touchscreen Infotainment",
+        "Bose Premium 8-Speaker Sound System",
+        "Ventilated Front Seats",
+        "Level 2 ADAS (Autonomous Driving Assistance)",
+        "Connected Car Technology (Bluelink)"
+      ],
+      "safety_features": [
+        "6 Airbags Standard",
+        "360-Degree Camera",
+        "Electronic Stability Control (ESC)",
+        "Hill-Start Assist Control (HAC)",
+        "All-Wheel Disc Brakes"
+      ],
+      "suitable_usage": [
+        "Family Highway Trips",
+        "Daily Urban Commuting",
+        "Long Distance Touring",
+        "Feature-rich Comfort Driving"
+      ],
+      "description": "The Hyundai Creta is a benchmark compact SUV in India, known for its bold futuristic design, feature-rich cabin, smooth engine options, and Level 2 ADAS safety suit. Ideal for families looking for comfort and modern technology."
+    },
+    {
+      "id": "hyundai-i20",
+      "name": "Hyundai i20",
+      "brand": "Hyundai",
+      "model": "i20",
+      "body_type": "Hatchback",
+      "fuel_type": ["Petrol"],
+      "transmission": ["Manual", "Automatic"],
+      "engine": "1.2L Kappa Petrol Engine",
+      "mileage": "19.6 - 20.35 kmpl",
+      "seating_capacity": 5,
+      "price_range_demo": "₹ 7.04 Lakh - ₹ 11.21 Lakh (Demo Data)",
+      "key_features": [
+        "10.25-inch Touchscreen Infotainment System",
+        "Electric Sunroof",
+        "Bose 7-Speaker Sound System",
+        "Wireless Phone Charger",
+        "Ambient Lighting"
+      ],
+      "safety_features": [
+        "6 Airbags Standard",
+        "Electronic Stability Control",
+        "Tyre Pressure Monitoring System (TPMS)",
+        "Rear Parking Camera with Dynamic Guidelines"
+      ],
+      "suitable_usage": [
+        "City Daily Commuting",
+        "Young Professionals",
+        "Easy Parking in Traffic",
+        "First-Time Car Buyers"
+      ],
+      "description": "The Hyundai i20 is a premium hatchback featuring sharp angular styling, segment-leading technology, high interior space, and a refined petrol engine ideal for city commuting."
+    },
+    {
+      "id": "tata-nexon",
+      "name": "Tata Nexon",
+      "brand": "Tata",
+      "model": "Nexon",
+      "body_type": "Compact SUV",
+      "fuel_type": ["Petrol", "Diesel", "Electric"],
+      "transmission": ["Manual", "Automatic"],
+      "engine": "1.2L Turbocharged Revotron Petrol / 1.5L Revotorq Diesel",
+      "mileage": "17.0 - 24.0 kmpl",
+      "seating_capacity": 5,
+      "price_range_demo": "₹ 8.15 Lakh - ₹ 15.60 Lakh (Demo Data)",
+      "key_features": [
+        "10.25-inch Floating Touchscreen",
+        "Digital Instrument Cluster",
+        "Ventilated Front Seats",
+        "360-Degree Surround View Camera",
+        "Sequential LED DRLs",
+        "JBL Sound System"
+      ],
+      "safety_features": [
+        "5-Star BNCAP / Global NCAP Safety Rating",
+        "6 Airbags Standard",
+        "Electronic Stability Program (ESP)",
+        "Blind Spot View Monitor",
+        "ISOFIX Child Seat Mounts"
+      ],
+      "suitable_usage": [
+        "Family Safety First Driving",
+        "Highway Touring",
+        "Rough Roads & High Ground Clearance (208mm)",
+        "Eco-conscious Buyers (EV option available)"
+      ],
+      "description": "The Tata Nexon is renowned for its 5-star crash safety rating, muscular SUV stance, turbocharged punchy engines, and rich feature list making it one of India's top-selling compact SUVs."
+    },
+    {
+      "id": "tata-harrier",
+      "name": "Tata Harrier",
+      "brand": "Tata",
+      "model": "Harrier",
+      "body_type": "Mid-size SUV",
+      "fuel_type": ["Diesel"],
+      "transmission": ["Manual", "Automatic"],
+      "engine": "2.0L Kryotec Turbocharged Diesel Engine",
+      "mileage": "14.6 - 16.8 kmpl",
+      "seating_capacity": 5,
+      "price_range_demo": "₹ 15.49 Lakh - ₹ 26.44 Lakh (Demo Data)",
+      "key_features": [
+        "Panoramic Sunroof with Mood Lighting",
+        "12.3-inch Touchscreen Infotainment",
+        "10-Speaker JBL Audio with Subwoofer",
+        "Terrain Response Modes (Normal, Wet, Rough)",
+        "Powered Memory Driver Seat"
+      ],
+      "safety_features": [
+        "5-Star Adult and Child BNCAP Safety Rating",
+        "7 Airbags",
+        "Advanced Driver Assistance Systems (ADAS)",
+        "Emergency Call & Breakdown Assist"
+      ],
+      "suitable_usage": [
+        "Highway Cruising & Long Distance Expeditions",
+        "Rough Terrain Driving",
+        "Spacious Family Travel",
+        "Commanding Road Presence"
+      ],
+      "description": "Built on the OMEGARC platform derived from Land Rover, the Tata Harrier is a rugged, safe, and spacious 5-seater diesel SUV designed for long-distance highway travel and tough road conditions."
+    },
+    {
+      "id": "kia-seltos",
+      "name": "Kia Seltos",
+      "brand": "Kia",
+      "model": "Seltos",
+      "body_type": "Compact SUV",
+      "fuel_type": ["Petrol", "Diesel"],
+      "transmission": ["Manual", "Automatic", "CVT", "DCT"],
+      "engine": "1.5L Smartstream Petrol / 1.5L CRDi Diesel / 1.5L Turbo Petrol",
+      "mileage": "17.0 - 20.7 kmpl",
+      "seating_capacity": 5,
+      "price_range_demo": "₹ 10.90 Lakh - ₹ 20.35 Lakh (Demo Data)",
+      "key_features": [
+        "Dual 10.25-inch HD Panoramic Screen",
+        "8-inch Head-Up Display (HUD)",
+        "Bose 8-Speaker Sound System",
+        "Dual-Zone Automatic Climate Control",
+        "Level 2 ADAS (17 Autonomous Features)"
+      ],
+      "safety_features": [
+        "6 Airbags Standard",
+        "All-Wheel Disc Brakes",
+        "Electronic Stability Control (ESC)",
+        "360-Degree Camera with Blind View Monitor"
+      ],
+      "suitable_usage": [
+        "Tech-Enthusiast Drivers",
+        "Modern Urban Families",
+        "Highway Driving with ADAS",
+        "Stylish City & Highway Travel"
+      ],
+      "description": "The Kia Seltos combines ultra-modern design with class-defining technology. Featuring dual widescreen displays, potent turbo engine options, and Level 2 ADAS safety, it is a premier compact SUV."
+    },
+    {
+      "id": "kia-sonet",
+      "name": "Kia Sonet",
+      "brand": "Kia",
+      "model": "Sonet",
+      "body_type": "Subcompact SUV",
+      "fuel_type": ["Petrol", "Diesel"],
+      "transmission": ["Manual", "Automatic", "iMT", "DCT"],
+      "engine": "1.2L Petrol / 1.0L Turbo Petrol / 1.5L Diesel Engine",
+      "mileage": "18.2 - 22.3 kmpl",
+      "seating_capacity": 5,
+      "price_range_demo": "₹ 7.99 Lakh - ₹ 15.75 Lakh (Demo Data)",
+      "key_features": [
+        "10.25-inch Touchscreen Navigation",
+        "Bose 7-Speaker Premium Sound",
+        "LED Sound Mood Lights",
+        "Smart Pure Air Purifier with Virus Protection",
+        "Remote Engine Start"
+      ],
+      "safety_features": [
+        "6 Airbags",
+        "Level 1 ADAS Features",
+        "Front & Rear Parking Sensors",
+        "Vehicle Stability Management (VSM)"
+      ],
+      "suitable_usage": [
+        "City Daily Commute",
+        "Compact SUV Enthusiasts",
+        "Feature-focused Young Buyers",
+        "Weekend Escapes"
+      ],
+      "description": "The Kia Sonet is a feature-packed subcompact SUV with aggressive styling, sporty interiors, multiple transmission options (including iMT and DCT), and segment-first sound mood lighting."
+    },
+    {
+      "id": "maruti-swift",
+      "name": "Maruti Suzuki Swift",
+      "brand": "Maruti Suzuki",
+      "model": "Swift",
+      "body_type": "Hatchback",
+      "fuel_type": ["Petrol", "CNG"],
+      "transmission": ["Manual", "Automatic"],
+      "engine": "1.2L Z-Series 3-Cylinder Petrol Engine",
+      "mileage": "24.8 - 25.75 kmpl",
+      "seating_capacity": 5,
+      "price_range_demo": "₹ 6.49 Lakh - ₹ 9.64 Lakh (Demo Data)",
+      "key_features": [
+        "9-inch SmartPlay Pro+ Touchscreen",
+        "Wireless Apple CarPlay & Android Auto",
+        "Rear AC Vents",
+        "Cruiser Control",
+        "Wireless Phone Charger"
+      ],
+      "safety_features": [
+        "6 Airbags Standard",
+        "Electronic Stability Program (ESP)",
+        "Hill Hold Assist",
+        "ABS with EBD"
+      ],
+      "suitable_usage": [
+        "Ultra Fuel-Efficient Daily Commute",
+        "Budget-Friendly City Car",
+        "First Time Car Buyers",
+        "Easy Maneuvering & Parking"
+      ],
+      "description": "The iconic Maruti Suzuki Swift offers legendary fuel efficiency (25+ kmpl), peppy driving dynamics, updated sporty exterior lines, and 6 airbags standard for everyday budget-friendly city driving."
+    },
+    {
+      "id": "maruti-brezza",
+      "name": "Maruti Suzuki Brezza",
+      "brand": "Maruti Suzuki",
+      "model": "Brezza",
+      "body_type": "Compact SUV",
+      "fuel_type": ["Petrol", "CNG"],
+      "transmission": ["Manual", "Automatic"],
+      "engine": "1.5L K15C Smart Hybrid Petrol Engine",
+      "mileage": "19.8 - 20.15 kmpl",
+      "seating_capacity": 5,
+      "price_range_demo": "₹ 8.34 Lakh - ₹ 14.14 Lakh (Demo Data)",
+      "key_features": [
+        "Electric Sunroof",
+        "360-Degree Camera",
+        "Head-Up Display (HUD)",
+        "9-inch SmartPlay Pro+ Audio System",
+        "Arkamys Surround Sound"
+      ],
+      "safety_features": [
+        "6 Airbags",
+        "ESP with Hill Hold Assist",
+        "ISOFIX Child Seat Restraints",
+        "Height Adjustable Front Seatbelts"
+      ],
+      "suitable_usage": [
+        "Reliable Family City SUV",
+        "Low Maintenance Driving",
+        "Fuel-efficient Commuting",
+        "Comfortable Highway Cruises"
+      ],
+      "description": "Maruti Suzuki Brezza is a highly reliable urban compact SUV powered by a 1.5L Smart Hybrid engine. It combines high resale value, spacious cabin, sunroof, head-up display, and bulletproof reliability."
+    },
+    {
+      "id": "toyota-fortuner",
+      "name": "Toyota Fortuner",
+      "brand": "Toyota",
+      "model": "Fortuner",
+      "body_type": "Full-size SUV",
+      "fuel_type": ["Petrol", "Diesel"],
+      "transmission": ["Manual", "Automatic"],
+      "engine": "2.8L Turbocharged Diesel (500 Nm) / 2.7L Petrol",
+      "mileage": "10.0 - 14.4 kmpl",
+      "seating_capacity": 7,
+      "price_range_demo": "₹ 33.43 Lakh - ₹ 51.44 Lakh (Demo Data)",
+      "key_features": [
+        "4x4 Wheel Drive with High/Low Range",
+        "Power Back Door",
+        "JBL 11-Speaker Sound System",
+        "Ventilated Front Seats",
+        "Drive Modes (Eco, Normal, Sport)"
+      ],
+      "safety_features": [
+        "7 Airbags",
+        "Vehicle Stability Control (VSC)",
+        "Traction Control System (TCS)",
+        "Downhill Assist Control (DAC)"
+      ],
+      "suitable_usage": [
+        "Extreme Off-Roading & Adventure",
+        "Large Family 7-Seater Travel",
+        "Heavy Duty Highway Cruising",
+        "VIP Road Presence & High Reliability"
+      ],
+      "description": "The Toyota Fortuner is an iconic full-size 7-seater SUV known worldwide for unmatched durability, off-road 4x4 capability, strong diesel power, and unbeatable resale value."
+    },
+    {
+      "id": "toyota-taisor",
+      "name": "Toyota Urban Cruiser Taisor",
+      "brand": "Toyota",
+      "model": "Taisor",
+      "body_type": "Subcompact Crossover",
+      "fuel_type": ["Petrol", "CNG"],
+      "transmission": ["Manual", "Automatic"],
+      "engine": "1.2L K-Series Petrol / 1.0L Turbo Boosterjet Petrol",
+      "mileage": "20.0 - 22.8 kmpl",
+      "seating_capacity": 5,
+      "price_range_demo": "₹ 7.74 Lakh - ₹ 13.04 Lakh (Demo Data)",
+      "key_features": [
+        "Head-Up Display (HUD)",
+        "360-Degree View Camera",
+        "9-inch Smart Touchscreen Infotainment",
+        "Wireless Smartphone Charging",
+        "Toyota i-Connect Telematics"
+      ],
+      "safety_features": [
+        "6 Airbags",
+        "Vehicle Stability Control",
+        "Hill Hold Assist",
+        "ABS with EBD"
+      ],
+      "suitable_usage": [
+        "Urban Crossover Driving",
+        "Daily City & Suburb Commutes",
+        "Toyota Service & Peace of Mind",
+        "Fuel Efficient Travel"
+      ],
+      "description": "The Toyota Urban Cruiser Taisor is a stylish coupe-inspired crossover offering strong fuel economy, Toyota's service peace of mind, punchy turbo petrol performance, and advanced tech features."
+    },
+    {
+      "id": "honda-city",
+      "name": "Honda City",
+      "brand": "Honda",
+      "model": "City",
+      "body_type": "Mid-size Sedan",
+      "fuel_type": ["Petrol", "Hybrid"],
+      "transmission": ["Manual", "Automatic", "CVT"],
+      "engine": "1.5L i-VTEC DOHC Petrol Engine / 1.5L e:HEV Strong Hybrid",
+      "mileage": "17.8 - 27.1 kmpl (Hybrid)",
+      "seating_capacity": 5,
+      "price_range_demo": "₹ 12.08 Lakh - ₹ 20.55 Lakh (Demo Data)",
+      "key_features": [
+        "Honda Sensing ADAS (Collision Mitigation, Lane Keep Assist)",
+        "Electric Sunroof",
+        "8-inch Advanced Touchscreen",
+        "LaneWatch Camera",
+        "Leatherette Seat Upholstery"
+      ],
+      "safety_features": [
+        "5-Star ASEAN NCAP Safety Rating",
+        "6 Airbags",
+        "Vehicle Stability Assist (VSA)",
+        "Agile Handling Assist (AHA)"
+      ],
+      "suitable_usage": [
+        "Executive & Chauffeur Driven Comfort",
+        "Smooth Highway Touring",
+        "Family Sedan Comfort",
+        "Hybrid Fuel Efficiency"
+      ],
+      "description": "The Honda City is the quintessential mid-size sedan celebrated for its high-revving 1.5L i-VTEC engine, supreme rear seat legroom, refined ride quality, and Honda Sensing ADAS safety."
+    },
+    {
+      "id": "honda-elevate",
+      "name": "Honda Elevate",
+      "brand": "Honda",
+      "model": "Elevate",
+      "body_type": "Compact SUV",
+      "fuel_type": ["Petrol"],
+      "transmission": ["Manual", "Automatic", "CVT"],
+      "engine": "1.5L i-VTEC DOHC Petrol Engine",
+      "mileage": "15.3 - 16.9 kmpl",
+      "seating_capacity": 5,
+      "price_range_demo": "₹ 11.69 Lakh - ₹ 16.51 Lakh (Demo Data)",
+      "key_features": [
+        "220mm Class-leading Ground Clearance",
+        "10.25-inch Touchscreen Infotainment",
+        "Single-pane Sunroof",
+        "458 Liters Huge Boot Space",
+        "Honda Sensing ADAS"
+      ],
+      "safety_features": [
+        "6 Airbags",
+        "Honda LaneWatch Camera",
+        "Vehicle Stability Assist",
+        "Hill Start Assist"
+      ],
+      "suitable_usage": [
+        "Family SUV Driving",
+        "Rough City Roads & Speedbreakers",
+        "Weekend Luggage Transport (458L Boot)",
+        "Reliable Japanese Engineering"
+      ],
+      "description": "Honda Elevate is a bold, tall-boy compact SUV offering high visibility, 220mm ground clearance, reliable 1.5L i-VTEC petrol power, and Honda Sensing safety features."
+    },
+    {
+      "id": "mahindra-thar",
+      "name": "Mahindra Thar",
+      "brand": "Mahindra",
+      "model": "Thar",
+      "body_type": "Off-road SUV",
+      "fuel_type": ["Petrol", "Diesel"],
+      "transmission": ["Manual", "Automatic"],
+      "engine": "2.0L mStallion Turbo Petrol / 2.2L mHawk Diesel / 1.5L Diesel RWD",
+      "mileage": "13.0 - 15.2 kmpl",
+      "seating_capacity": 4,
+      "price_range_demo": "₹ 11.35 Lakh - ₹ 17.60 Lakh (Demo Data)",
+      "key_features": [
+        "4WD Drivetrain with Low Range Transfer Case",
+        "Convertible / Hard Top Roof Options",
+        "7-inch Drizzle Resistant Touchscreen",
+        "Removable Doors & Washable Interior",
+        "Adventure Statistics Display"
+      ],
+      "safety_features": [
+        "4-Star Global NCAP Safety Rating",
+        "Dual Airbags",
+        "ESP with Roll-over Mitigation",
+        "Built-in Roll Cage"
+      ],
+      "suitable_usage": [
+        "Off-Road Exploration & Mudding",
+        "Weekend Adventure Trips",
+        "Lifestyle & Passion Vehicle",
+        "Hill Station Driving"
+      ],
+      "description": "The Mahindra Thar is an iconic lifestyle 4x4 SUV built for extreme off-road adventure. Featuring rugged styling, convertible top choices, and high ground clearance, it is a favorite for thrill seekers."
+    },
+    {
+      "id": "mahindra-xuv700",
+      "name": "Mahindra XUV700",
+      "brand": "Mahindra",
+      "model": "XUV700",
+      "body_type": "Mid-size SUV",
+      "fuel_type": ["Petrol", "Diesel"],
+      "transmission": ["Manual", "Automatic"],
+      "engine": "2.0L mStallion Turbo Petrol (200 PS) / 2.2L mHawk Diesel (185 PS)",
+      "mileage": "13.0 - 16.5 kmpl",
+      "seating_capacity": 7,
+      "price_range_demo": "₹ 13.99 Lakh - ₹ 26.99 Lakh (Demo Data)",
+      "key_features": [
+        "Dual 10.25-inch Superscreen Display",
+        "Sony 3D 12-Speaker Sound System",
+        "Skyroof (Largest Panoramic Sunroof)",
+        "Level 2 ADAS (Auto Emergency Braking, Adaptive Cruise)",
+        "Flush Door Handles"
+      ],
+      "safety_features": [
+        "5-Star Global NCAP Safety Rating",
+        "7 Airbags",
+        "Electronic Park Brake",
+        "Driver Drowsiness Alert"
+      ],
+      "suitable_usage": [
+        "Large Family 7-Seater Road Trips",
+        "High Speed Highway Touring",
+        "Powerful Performance Driving (200 PS)",
+        "Luxury Tech Experience"
+      ],
+      "description": "Mahindra XUV700 is a flagship 5/7 seater SUV offering segment-best engine outputs (up to 200 PS), Level 2 ADAS, panoramic skyroof, 5-star NCAP safety, and luxury Sony 3D audio."
+    },
+    {
+      "id": "volkswagen-virtus",
+      "name": "Volkswagen Virtus",
+      "brand": "Volkswagen",
+      "model": "Virtus",
+      "body_type": "Mid-size Sedan",
+      "fuel_type": ["Petrol"],
+      "transmission": ["Manual", "Automatic", "DSG"],
+      "engine": "1.0L TSI Turbo Petrol / 1.5L TSI EVO with ACT (150 PS)",
+      "mileage": "18.1 - 20.8 kmpl",
+      "seating_capacity": 5,
+      "price_range_demo": "₹ 11.56 Lakh - ₹ 19.40 Lakh (Demo Data)",
+      "key_features": [
+        "10-inch VW Play Touchscreen Infotainment",
+        "8-inch Digital Cockpit",
+        "Wireless Apple CarPlay & Android Auto",
+        "Ventilated Front Seats",
+        "521 Liters Class-leading Boot"
+      ],
+      "safety_features": [
+        "5-Star Global NCAP Adult & Child Safety Rating",
+        "6 Airbags Standard",
+        "Electronic Stability Control (ESC)",
+        "Multi-Collision Brakes"
+      ],
+      "suitable_usage": [
+        "Performance Enthusiasts & Enthusiast Drivers",
+        "5-Star Safety Priority",
+        "High-Speed European Highway Stability",
+        "Elegant Sedan Driving"
+      ],
+      "description": "The Volkswagen Virtus is a dynamic 5-star NCAP German sedan offering impressive 150 PS TSI performance, razor-sharp handling, 521L boot capacity, and high-speed highway stability."
+    },
+    {
+      "id": "skoda-slavia",
+      "name": "Skoda Slavia",
+      "brand": "Skoda",
+      "model": "Slavia",
+      "body_type": "Mid-size Sedan",
+      "fuel_type": ["Petrol"],
+      "transmission": ["Manual", "Automatic", "DSG"],
+      "engine": "1.0L TSI Turbo Petrol / 1.5L TSI EVO Engine (150 PS)",
+      "mileage": "18.7 - 20.3 kmpl",
+      "seating_capacity": 5,
+      "price_range_demo": "₹ 11.63 Lakh - ₹ 19.12 Lakh (Demo Data)",
+      "key_features": [
+        "10-inch Touchscreen Infotainment",
+        "Subwoofer in Spare Wheel Well",
+        "Electric Sunroof",
+        "Ventilated Front Seats",
+        "Crystalline LED Headlamps"
+      ],
+      "safety_features": [
+        "5-Star Global NCAP Safety Rating",
+        "6 Airbags",
+        "Electronic Differential Lock System (XDS+)",
+        "Hill Hold Control"
+      ],
+      "suitable_usage": [
+        "European Luxury & Style",
+        "Family Highway Touring",
+        "Spacious Trunk Travel (521L)",
+        "Driving Dynamics Enthusiasts"
+      ],
+      "description": "The Skoda Slavia is an elegant Czech sedan combining timeless design, 5-star Global NCAP safety, responsive TSI engines, luxurious interior appointments, and superior ride comfort."
+    }
+  ]
+}
